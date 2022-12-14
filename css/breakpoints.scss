@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+//variables
+$white-color: rgb(244, 244, 244);
+$primary-color: #003464;
+$blue-text: #017cee;
+$blue-text2: rgb(2, 187, 255);
+$yellow-color:  #FFE63A;
+$yellow-dark:  #FFC300;
+$light-grey: #d9d9d9;
+$grey-color: #c2c2c2;
+$grey-text: #7e8489;
+$nav-color: #6F7478;
+$orange-link: #F88600;
+$blue-link: #056DE7;
+$green-link: #00AC11;
+
+$mobile-padding: 16px;
+$desktop-padding: 36px;
+
+@mixin icon-container__offer {
+    background-color: white;
+    color: rgb(2, 187, 255);
+    height: 80px;
+    width: 80px;
+    border-radius: 60px;
+}
+
+@mixin icon-container {
+    height: 80px;
+    width: 80px;
+    border-radius: 60px;
+    position: relative;
+    left: 95%;
+    bottom: 12%;
+}
+
+@mixin icon-container2 {
+    height: 90px;
+    width: 90px;
+    border-radius: 60px;
+    position: relative;
+    left: 96%;
+    bottom: 19%;
+    border: 3px solid white;
+}
+
+@mixin icon {
+    position: relative;
+    left: 26%;
+    top: 25%;
+    font-size: 36px;
+    color: white;
+    filter: drop-shadow(4px 4px rgba(0, 0, 0, 0.287))
+}
+
+@mixin icon-offer {
+    position: relative;
+    left: 26%;
+    top: 25%;
+    font-size: 36px;
+    color: $blue-text2;
+    filter: drop-shadow(2px 2px rgba(56, 56, 56, 0.287))
+}
+
+@mixin link {
+    text-decoration: none;
+    padding-top: 2rem;
+    color: $grey-text;
+}
+
+@mixin grid {
+    display: grid;
+    margin: 4rem auto;
+    padding: 2em 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin heading {
+    color: $grey-text;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 12rem;
+    border-bottom: 2rem;
+    font-weight: 500;
+    text-decoration-line: underline;
+    text-decoration-color: $yellow-color;
+    text-underline-offset: 1rem;
+}
+
+@mixin heading-mixture {
+    color: $white-color;
+    padding: 0 2rem;
+
+    .small {
+        font-size: 1.2rem;
+        line-height: 40px;
+        color: rgb(2, 187, 255);
+        font-weight: 500;
+    }
+
+    .big {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}
+
+@mixin sub-heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2.2rem;
+    gap: 1rem;
+    min-width: 800px;
+
+    .color {
+        color: $primary-color;
+        font-weight: 700;
+    }
+    .plain {
+        color: $grey-text;
+        font-weight: 500;
+    }
+}
+
+@mixin btn {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: none;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+@mixin btn-blue {
+    text-align: center;
+
+    .btn-blue {
+        background-color:#056DE7;
+        padding: 20px;
+        border: none;
+        border-radius: 10px;
+        font-size: 1rem;
+        color: white;
+        cursor: pointer;
+    }
+
+}
+
+@mixin btn-yellow {
+    margin-left: 2rem;
+    background-color: $yellow-color;
+    padding: 15px 30px;
+    border: none;
+    align-items: center;
+    font-weight: 500;
+}
+
+@mixin service-card {
+    border-radius: 15px;
+    width: 340px;
+    height: 380px;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+
+    .heading {
+        color: $grey-text;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .detail {
+        color: $grey-text;
+        line-height: 2rem;
+        padding-top: 2rem;
+        font-size: 1rem;
+        list-style-type: none;
+        gap: 1rem;
+
+        .fa-circle-check {
+            font-size: 20px;
+        }
+    }
+}
+
+@mixin service-card__hover {
+    border: 2px solid white;
+    .heading {
+        color: $white-color;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    .detail {
+        color: $white-color;
+    }
+}
+
+@mixin banner {
+    padding: 5rem 0;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+@mixin sub-banner {
+    position: relative;
+    top: 33%;
+    height: 200px;
+    width: 70%;
+    background-color: #00000040;
+    color: white;
+    text-align: center;
+    padding: 5rem 4rem;
+    font-size: 1.5rem;
+    justify-content: center;
+    margin: 0 auto;
+    h1 {
+    min-width: 500px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    }
+}
+   
+   
+   
+   
+
+   
+   
+   
+ 
